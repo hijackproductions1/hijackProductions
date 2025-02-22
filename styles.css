@@ -1,0 +1,365 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    /* background-color: #2d2d2d; */
+    background-color: #1e1e1e;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.me-2{
+    margin-right: -0.5rem !important;
+    margin-bottom: 0.2rem !important;
+}
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    /* color: #fff; */
+    background-color: #1e1e1e;
+
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    /* background-color: #0073e6; */
+    background-color: red;
+    color: #fff;
+}
+
+#services {
+    text-align: center;
+    padding: 50px 20px;
+  
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service {
+    /* background: #ddd; */
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card{
+    background-color: #333;
+    color: #fff;
+}
+
+#contact {
+    text-align: center;
+    /* padding: 50px 20px; */
+    /* background-color: #f8f8f8; */
+    background-color: #1e1e1e
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Apply Bebas Neue to Headings */
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Apply Poppins Bold to Body Text */
+body, p, button, input, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+/* Navbar Styling */
+.navbar-brand {
+    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Hero Section */
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 700; /* Ensuring Bold Poppins */
+}
+
+/* Service Cards */
+.service-container .card h3 {
+    font-size: 24px;
+}
+
+/* Footer */
+footer p {
+    font-size: 14px;
+}
+.service-card {
+    /* background-color: #292929; */
+    color: white;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    /* background-color: red; */
+    /* background-color: #333; */
+    color: white;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: white; /* Keeps the text white */
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: red; /* Change to any color you like */
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+/* Position the text over the image */
+.position-relative {
+    position: relative;
+}
+
+/* Default styling for larger screens */
+.overlay-text {
+    position: absolute;
+    bottom: 42px; /* Adjust this value for proper positioning */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    /* background: rgba(0, 0, 0, 0.6);  */
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 90%; /* Prevents overflow */
+    text-align: center;
+    /* border-style:double; */
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	/* box-shadow: 2px 2px 3px #999; */
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .overlay-text {
+        font-size: 20px; /* Reduce font size for smaller screens */
+        bottom: 5px; /* Adjust text position */
+        padding: 8px 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay-text {
+        font-size: 18px; /* Further reduce font size for very small screens */
+        bottom: 2px; /* Ensure it doesn’t overlap */
+        padding: 6px 10px; /* Adjust padding for better fit */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .service {
+        width: 100%;
+    }
+}
+
+footer{
+    text-align: center;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #1a1a1a; /* Darker bg-dark tone */
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-weight: 700; /* Bold Poppins */
+}
+
+.hero p {
+    font-size: 18px;
+    font-weight: 500; /* Slightly less bold for readability */
+}
+
+/* Slider Styles */
+.text-slider {
+    position: relative;
+    min-height: 200px; /* Adjust based on content height */
+}
+
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+}
+
+.slider-item.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+/* Navigation Arrows */
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btn-arrow:hover {
+    color: #1877f2; /* Matches your button color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .btn-arrow {
+        font-size: 20px;
+    }
+}
