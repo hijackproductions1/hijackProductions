@@ -220,6 +220,14 @@ footer p {
 	margin-top:16px;
 }
 
+
+
+
+.instagram {
+    bottom: 110px; /* Moves Instagram above WhatsApp */
+    background-color: #e4405f; /* Instagram Color */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .overlay-text {
